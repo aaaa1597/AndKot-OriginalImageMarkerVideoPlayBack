@@ -741,8 +741,10 @@ AppController::createObservers()
     if (mTarget == IMAGE_TARGET_ID)
     {
         auto imageTargetConfig = vuImageTargetConfigDefault();
-        imageTargetConfig.databasePath = "ImageTargets/StonesAndChips.xml";
-        imageTargetConfig.targetName = "stones";
+//      imageTargetConfig.databasePath = "ImageTargets/StonesAndChips.xml";
+//      imageTargetConfig.targetName = "stones";
+        imageTargetConfig.databasePath = "orignal/image.xml";
+        imageTargetConfig.targetName = "001_stones_jpg";
         imageTargetConfig.activate = VU_TRUE;
 
         VuImageTargetCreationError imageTargetCreationError;
